@@ -9,7 +9,7 @@
   "version": {
     "Major": 0,
     "Minor": 0,
-    "Patch": 2
+    "Patch": 3
   },
   "demands": [],
   "minimumAgentVersion": "1.83.0",
@@ -80,7 +80,7 @@
       "type": "string",
       "label": "SMTP Server",
       "defaultValue": "",
-      "required": false,
+      "required": true,
       "groupName": "smtpsettings",
       "helpMarkDown": "Name or IP Address of a SMTP server"
     },
@@ -89,7 +89,7 @@
       "type": "string",
       "label": "SMTP Port",
       "defaultValue": "587",
-      "required": false,
+      "required": true,
       "groupName": "smtpsettings",
       "helpMarkDown": "Port to the SMTP server"
     },
@@ -98,7 +98,7 @@
       "type": "string",
       "label": "SMTP Username",
       "defaultValue": "",
-      "required": false,
+      "required": true,
       "groupName": "smtpsettings",
       "helpMarkDown": "Username for the SMTP server"
     },
@@ -107,7 +107,7 @@
       "type": "string",
       "label": "SMTP Password",
       "defaultValue": "",
-      "required": false,
+      "required": true,
       "groupName": "smtpsettings",
       "helpMarkDown": "Password for the SMTP server"
     },
