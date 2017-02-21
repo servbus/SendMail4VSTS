@@ -1,0 +1,65 @@
+{
+	"manifestVersion": 1,
+	"id": "SendMail4VSTS",
+	"name": "Send Email",
+	"version": "0.0.2",
+	"publisher": "servbus",
+	"public": false,
+	"targets": [{
+			"id": "Microsoft.VisualStudio.Services"
+		}
+	],
+	"description": "Send e-mail across platforms",
+	"categories": [
+		"Build and release"
+	],
+	"tags": [
+		"email",
+		"message"
+	],
+	"icons": {
+		"default": "images/icon.png"
+	},
+	"screenshots": [{
+			"path": "images/screen1.png"
+		}
+	],
+	"content": {
+		"details": {
+			"path": "README.md"
+		},
+		"license": {
+			"path": "license"
+		}
+	},
+	"files": [{
+			"path": "SendMail"
+		}
+	],
+	"links": {
+		"source": {
+			"uri": "https://github.com/servbus/SendMail4VSTS"
+		},
+		"repository": {
+			"uri": "https://github.com/servbus/SendMail4VSTS"
+		},
+		"issues": {
+			"uri": "https://github.com/servbus/SendMail4VSTS/issues"
+		}
+	},
+	"branding": {
+		"color": "rgb(36, 43, 50)",
+		"theme": "dark"
+	},
+	"contributions": [{
+			"id": "SendMail4VSTS",
+			"type": "ms.vss-distributed-task.task",
+			"targets": [
+				"ms.vss-distributed-task.tasks"
+			],
+			"properties": {
+				"name": "SendMail"
+			}
+		}
+	]
+}
