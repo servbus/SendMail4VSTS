@@ -1,6 +1,6 @@
-#SendMail4VSTS
+# SendMail4VSTS
 
-###This is an extension for Visual Studio Team Services.
+### This is an extension for Visual Studio Team Services.
 
 This extension takes care of sending email within your build or release pipeline for Visual Studio Team Services.
 
