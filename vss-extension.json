@@ -2,9 +2,9 @@
 	"manifestVersion": 1,
 	"id": "SendMail4VSTS",
 	"name": "Send Email",
-	"version": "0.0.3",
+	"version": "0.1.0",
 	"publisher": "servbus",
-	"public": false,
+	"public": true,
 	"targets": [{
 			"id": "Microsoft.VisualStudio.Services"
 		}
