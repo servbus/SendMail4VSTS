@@ -9,7 +9,7 @@
   "version": {
     "Major": 0,
     "Minor": 2,
-    "Patch": 2
+    "Patch": 4
   },
   "demands": [],
   "minimumAgentVersion": "1.83.0",
@@ -114,11 +114,20 @@
     {
       "name": "UseSSL",
       "type": "boolean",
-      "label": "SMTP Use SSL?",
+      "label": "The SMTP server's Encryption method is SSL?",
       "defaultValue": "true",
       "required": false,
       "groupName": "smtpsettings",
       "helpMarkDown": "Indication whether to use SSL for connecting to the SMTP server"
+    },
+    {
+      "name": "STARTTLS",
+      "type": "boolean",
+      "label": "The SMTP server's Encryption method is STARTTLS?",
+      "defaultValue": "false",
+      "required": false,
+      "groupName": "smtpsettings",
+      "helpMarkDown": "The SMTP server's encryption method is STARTTLS"
     }
   ],
   "instanceNameFormat": "Send an email with subject $(Subject)",

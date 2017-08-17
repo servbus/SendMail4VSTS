@@ -14,6 +14,8 @@ try {
     var isSSL = tl.getBoolInput('UseSSL', false);
     var port = tl.getInput('SmtpPort', true);
 
+    var startTLS = tl.getBoolInput('STARTTLS', false);
+
     var subject = tl.getInput("Subject", true);
     var body = tl.getInput("Body", true);
     var to = tl.getInput("To", true);
@@ -22,7 +24,7 @@ try {
     var attachmentPath = tl.getInput("Attachment", false);
     tl.debug("get all");
 
-    var stransporter = nodemailer.createTransport({
+    var config = {
         host: server,
         secure: isSSL, // use SSL
         port: port, // port
@@ -30,7 +32,16 @@ try {
             user: username,
             pass: password
         }
-    });
+    };
+    if (startTLS) {
+        config.requireTLS = true;
+        config.secure = false;
+        config.tls = {
+            rejectUnauthorized: false
+        };
+    }
+
+    var stransporter = nodemailer.createTransport(config);
 
     function ssl() {
         var mailOptions = {
@@ -40,7 +51,7 @@ try {
             html: body
         }
         if (attachmentPath) {
-            mailOptions.attachments =   [{
+            mailOptions.attachments = [{
                 path: attachmentPath
             }];
         }
