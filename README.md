@@ -12,5 +12,8 @@ It can run on different platforms, for example Mac Os, Windows or Linux.
 
 #### Package
 
-First run npm install in the SendMail directory
+First run npm install in the SendMail directory.  
 Then execute PackageExtension.cmd
+
+
+[marketplace url](https://marketplace.visualstudio.com/items?itemName=servbus.SendMail4VSTS&usemarkdownit=true)
