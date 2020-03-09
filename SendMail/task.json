@@ -9,7 +9,7 @@
   "version": {
     "Major": 0,
     "Minor": 2,
-    "Patch": 4
+    "Patch": 5
   },
   "demands": [],
   "minimumAgentVersion": "1.83.0",
@@ -98,7 +98,7 @@
       "type": "string",
       "label": "SMTP Username",
       "defaultValue": "",
-      "required": true,
+      "required": false,
       "groupName": "smtpsettings",
       "helpMarkDown": "Username for the SMTP server"
     },
@@ -107,7 +107,7 @@
       "type": "string",
       "label": "SMTP Password",
       "defaultValue": "",
-      "required": true,
+      "required": false,
       "groupName": "smtpsettings",
       "helpMarkDown": "Password for the SMTP server"
     },

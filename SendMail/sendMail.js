@@ -28,11 +28,18 @@ try {
         host: server,
         secure: isSSL, // use SSL
         port: port, // port
-        auth: {
-            user: username,
-            pass: password
-        }
     };
+
+    if(username)
+    {
+        config.auth = {
+            user: username
+        };
+        if(password){
+            config.auth.pass = password;
+        }
+    }
+
     if (startTLS) {
         config.requireTLS = true;
         config.secure = false;
