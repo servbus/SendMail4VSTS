@@ -2,7 +2,7 @@
 	"manifestVersion": 1,
 	"id": "SendMail4VSTS",
 	"name": "Send Email",
-	"version": "0.2.4",
+	"version": "0.2.5",
 	"publisher": "servbus",
 	"public": true,
 	"targets": [{
