@@ -44,6 +44,15 @@
       "groupName": "mailsettings",
       "helpMarkDown": "From Address"
     },
+      {
+      "name": "CC",
+      "type": "string",
+      "label": "CC Address",
+      "defaultValue": "",
+      "required": true,
+      "groupName": "mailsettings",
+      "helpMarkDown": "CC Address"
+    },
     {
       "name": "Subject",
       "type": "string",
