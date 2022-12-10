@@ -20,7 +20,7 @@ try {
     var body = tl.getInput("Body", true);
     var to = tl.getInput("To", true);
     var from = tl.getInput("From", true);
-
+    var cc =  tl.getInput("CC", true);
     var attachmentPath = tl.getInput("Attachment", false);
     tl.debug("get all");
 
@@ -54,6 +54,7 @@ try {
         var mailOptions = {
             from: from,
             to: to,
+            cc: cc,
             subject: subject,
             html: body
         }
