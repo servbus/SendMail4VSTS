@@ -36,6 +36,33 @@
       "helpMarkDown": "To Addresses. Separated by commas (,)"
     },
     {
+      "name": "CC",
+      "type": "string",
+      "label": "CC Addresses",
+      "defaultValue": "",
+      "required": false,
+      "groupName": "mailsettings",
+      "helpMarkDown": "CC Addresses. Separated by commas (,)"
+    },
+    {
+      "name": "BCC",
+      "type": "string",
+      "label": "BCC Addresses",
+      "defaultValue": "",
+      "required": false,
+      "groupName": "mailsettings",
+      "helpMarkDown": "BCC Addresses. Separated by commas (,)"
+    },
+    {
+      "name": "ReplyTo",
+      "type": "string",
+      "label": "ReplyTo Addresses",
+      "defaultValue": "",
+      "required": false,
+      "groupName": "mailsettings",
+      "helpMarkDown": "ReplyTo Addresses. Separated by commas (,)"
+    },
+    {
       "name": "From",
       "type": "string",
       "label": "From Address",
