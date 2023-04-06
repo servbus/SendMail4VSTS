@@ -19,6 +19,9 @@ try {
     var subject = tl.getInput("Subject", true);
     var body = tl.getInput("Body", true);
     var to = tl.getInput("To", true);
+    var cc = tl.getInput("CC", false);
+    var bcc = tl.getInput("BCC", false);
+    var replyTo = tl.getInput("ReplyTo", false);
     var from = tl.getInput("From", true);
 
     var attachmentPath = tl.getInput("Attachment", false);
@@ -54,6 +57,9 @@ try {
         var mailOptions = {
             from: from,
             to: to,
+            cc: cc,
+            bcc: bcc,
+            replyTo: replyTo,
             subject: subject,
             html: body
         }
